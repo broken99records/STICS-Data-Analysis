@@ -62,8 +62,6 @@ https://www.kaggle.com/datasets/donjoeml/erasmus-mobility-statistics-2014-2019?s
 
 4. Problem Statement / Questions
 
-Example:
-
 Where are the students coming from?
 
 Where are the most popular destinations for Erasmus 
@@ -89,15 +87,20 @@ Column formatting using commas to align and separate values
 
 6. Dashboard Explanation & Insights
 
-Explain each chart and what it shows.
-
 report/participant nationality.png
+-> this bar plot shows the nationality of the participants
+ in the Erasmus program
 
 report/recipient countries.png
+-> this bar plot shows the most popular destinations for participants in the 
+dataset subset 
 
 7. Conclusion
 
-Summarize key findings and why they matter.
+The most represented nationality in the subset is Austria.
+The most  popular destination for austrian students in the subset was
+Germany(DE) followed by The united Kingdom, Spain(ES), France(FR) and Italy(IT).
+The most popular fields of study are?
 
 8. References
 European Commission. (2025, June 26).
