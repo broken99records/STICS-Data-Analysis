@@ -1,1 +1,106 @@
-removed commas from the csv file, was causing a parse error
+
+DATA ANALYSIS REPORT 
+
+1. Overview of the Education Domain
+
+Education data matters when seeking to improve outcomes of students, 
+monitoring trends and improving education overall.
+The domain of interest for this study is the European Union
+Erasmus+ program.
+What is Erasmus+?
+Erasmus+ is the EU's programme to support education, training, youth
+and sport in Europe (European Commission, 2025). Erasmus+ Supports individuals
+ traveling abroad for study, training, or teaching. It is popular for 
+University student exchange. The movement of students under erasmus is
+ analyzed in this report
+
+2. Dataset Introduction
+
+Name of dataset: Erasmus mobility statistics 2014_2019
+
+What it contains: Erasmus mobility statistics from 2014 to 2019
+ around the world by europa.eu
+
+Number of records & attributes: There are more than a million entries in the 
+original dataset and over 1GB in size.
+
+Due to computer performance issues when accessing a file that large,
+A smaller subset of the first 5000 records was used for this report.
+
+There are 24 attributes in this dataset,
+Data columns (total 24 columns):
+ #   Column                                                                                                                                                                                                                                     Non-Null Count  Dtype  
+---  ------                                                                                                                                                                                                                                     --------------  -----  
+ 0   Project Reference                                                                                                                                                                                                                          3736 non-null   str    
+ 1    Academic Year                                                                                                                                                                                                                             3736 non-null   str    
+ 2    Mobility Start Month                                                                                                                                                                                                                      3736 non-null   str    
+ 3    Mobility End Month                                                                                                                                                                                                                        3736 non-null   str    
+ 4    Mobility Duration                                                                                                                                                                                                                         3736 non-null   float64
+ 5    Activity (mob)                                                                                                                                                                                                                            3736 non-null   str    
+ 6    Field of Education                                                                                                                                                                                                                        3736 non-null   str    
+ 7    Participant Nationality                                                                                                                                                                                                                   3736 non-null   str    
+ 8    Education Level                                                                                                                                                                                                                           3736 non-null   str    
+ 9    Participant Gender                                                                                                                                                                                                                        3736 non-null   str    
+ 10   Participant Profile                                                                                                                                                                                                                       3736 non-null   str    
+ 11   Special Needs                                                                                                                                                                                                                             3736 non-null   str    
+ 12   Fewer Opportunities                                                                                                                                                                                                                       3736 non-null   str    
+ 13   GroupLeader                                                                                                                                                                                                                               3736 non-null   str    
+ 14   Participant Age                                                                                                                                                                                                                           3736 non-null   str    
+ 15   Sending Country Code                                                                                                                                                                                                                      3736 non-null   str    
+ 16   Sending City                                                                                                                                                                                                                              3736 non-null   str    
+ 17   Sending Organization                                                                                                                                                                                                                      3736 non-null   str    
+ 18   Sending Organisation Erasmus Code                                                                                                                                                                                                         3736 non-null   str    
+ 19   Receiving Country Code                                                                                                                                                                                                                    3736 non-null   str    
+...
+ 22   Receiving Organisation Erasmus Code                                                                                                                                                                                                       3736 non-null   str    
+ 23   Participants                                                                                                                                                                                                                              3736 non-null   int64  
+data types: float64(1), int64(1), str(22)
+memory usage: 700.6 KB
+
+3. Data Source
+https://www.kaggle.com/datasets/donjoeml/erasmus-mobility-statistics-2014-2019?select=sample.csv
+
+4. Problem Statement / Questions
+
+Example:
+
+Where are the students coming from?
+
+Where are the most popular destinations for Erasmus 
+students?
+
+what are the students studying?
+
+
+5. Data Cleaning Steps
+
+Commas appeared inside university names, causing parsing errors.
+Removed some of those commas from the csv file, fixed parse error.
+Due to difficulty removing all instances of misplaced commas in a 5000
+records, all records with parse errors are skipped in processing.
+
+Missing values
+Ignored missing values
+
+Duplicate removal
+Did not remove duplicate values 
+
+Column formatting using commas to align and separate values
+
+6. Dashboard Explanation & Insights
+
+Explain each chart and what it shows.
+
+report/participant nationality.png
+
+report/recipient countries.png
+
+7. Conclusion
+
+Summarize key findings and why they matter.
+
+8. References
+European Commission. (2025, June 26).
+ What is Erasmus+? Erasmus+.
+ https://erasmus-plus.ec.europa.eu/about-erasmus/what-is-erasmus
+
